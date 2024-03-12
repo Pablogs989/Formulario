@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Club Viejuner</title>
+  </head>
+  <body>
+    <h1>El Club Viejuner</h1>
+    <form>
+      <fieldset>
+        <legend>Tú:</legend>
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          autofocus
+          tabindex="1"
+        /><br /><br />
+        <label for="apellidos">Apellidos:</label>
+        <input
+          type="text"
+          name="apellidos"
+          id="apellidos"
+          tabindex="2"
+        /><br /><br />
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" tabindex="3" /><br /><br />
+        <label for="sexo" id="sexo">Sexo:</label><br />
+        <input
+          type="radio"
+          id="hombre"
+          name="sexo"
+          value="Hombre"
+          tabindex="4"
+        />
+        <label for="html">Hombre</label><br />
+        <input type="radio" id="mujer" name="sexo" value="Mujer" tabindex="5" />
+        <label for="css">Mujer</label><br /><br />
+        <label for="Me siento viejuner"> Me siento viejuner</label>
+        <input
+          type="checkbox"
+          id="Me siento viejuner"
+          name="Me siento viejuner"
+          value="Si"
+          tabindex="6"
+        /><br /><br />
+        <label for="informacion">Escribe algo sobre ti:</label><br />
+        <textarea
+          id="informacion"
+          name="informacion"
+          rows="10"
+          cols="40"
+          tabindex="7"
+        ></textarea
+        ><br /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Tus circunstancias:</legend>
+        <label for="correo">Correo electronico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="ejemplo@email.com"
+          tabindex="8"
+        /><br /><br />
+        <label for="telefono">Telefono</label>
+        <input
+          type="number"
+          id="telefono"
+          name="telefono"
+          placeholder="612423651"
+          pattern="[0-9]{10}"
+          tabindex="9"
+        /><br />
+      </fieldset>
+      <br />
+      <input type="reset" value="Reset" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
